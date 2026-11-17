@@ -3,115 +3,99 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Второй тур: за кого Гагаузия? Анонимный опрос</title>
-<meta name="description" content="Анонимный опрос перед вторым туром выборов башкана Гагаузии. Две минуты, без имён и телефонов.">
+<title>Башкан Гагаузии: кого поддержите вы? Опрос</title>
+<meta name="description" content="Короткий анонимный опрос о втором туре выборов башкана Гагаузии. Две минуты, без имён и телефонов.">
 <link rel="canonical" href="https://opros-data.github.io/">
 <meta name="robots" content="index,follow">
-<meta name="theme-color" content="#2f74b5">
+<meta name="theme-color" content="#f6f3ec">
 <meta name="color-scheme" content="light">
 <meta name="format-detection" content="telephone=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="Опрос Гагаузия">
+<meta name="apple-mobile-web-app-title" content="Опрос">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <!-- Open Graph: Facebook, Instagram, Telegram, Viber, WhatsApp, Odnoklassniki -->
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Предвыборный опрос в Гагаузии">
+<meta property="og:site_name" content="Опрос: второй тур">
 <meta property="og:locale" content="ru_RU">
 <meta property="og:url" content="https://opros-data.github.io/">
-<meta property="og:title" content="Второй тур: за кого Гагаузия?">
-<meta property="og:description" content="Анонимный опрос перед вторым туром выборов башкана. Две минуты, без имён и телефонов.">
+<meta property="og:title" content="Башкан Гагаузии: кого поддержите вы?">
+<meta property="og:description" content="Короткий анонимный опрос о втором туре. Две минуты, без имён и телефонов.">
 <meta property="og:image" content="https://opros-data.github.io/og.png">
 <meta property="og:image:secure_url" content="https://opros-data.github.io/og.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Второй тур: за кого Гагаузия? Анонимный опрос">
+<meta property="og:image:alt" content="Башкан Гагаузии: кого поддержите вы? Опрос">
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Второй тур: за кого Гагаузия?">
-<meta name="twitter:description" content="Анонимный опрос перед вторым туром выборов башкана. Две минуты, без имён и телефонов.">
+<meta name="twitter:title" content="Башкан Гагаузии: кого поддержите вы?">
+<meta name="twitter:description" content="Короткий анонимный опрос о втором туре. Две минуты, без имён и телефонов.">
 <meta name="twitter:image" content="https://opros-data.github.io/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f3f6fa;--card:#fff;--text:#12324f;--muted:#5b6b7c;--sky:#2f74b5;--sky-d:#245c92;--gold:#e8b53a;--gold-d:#c9971f;--border:#d3dde8;--err:#b8352a;--ok:#2f7d4f;--sel:#eef6ff}
+:root{--bg:#f6f3ec;--ink:#1c1b19;--muted:#6f6a60;--acc:#1f6f5c;--acc-d:#17574a;--line:#ddd6c8;--err:#a3331f;--sel:#e6f0ec}
 *{box-sizing:border-box}
 html{background:var(--bg)}
-body{margin:0;background:var(--bg);color:var(--text);font:17px/1.5 "Golos Text",Inter,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;-webkit-text-size-adjust:100%}
-.band{background:var(--sky);color:#fff;position:relative}
-.band::after{content:"";display:block;height:10px;background:linear-gradient(#fff 0 50%,#c9412b 50% 100%)}
-.band .in{max-width:720px;margin:0 auto;padding:calc(22px + env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) 18px max(16px,env(safe-area-inset-left));display:flex;align-items:center;gap:14px}
-.stars{display:flex;flex-direction:column;gap:3px;flex:0 0 auto}
-.stars span{width:14px;height:14px;background:var(--gold);clip-path:polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
-h1{font-size:22px;line-height:1.2;margin:0;font-weight:800;letter-spacing:-.01em}
-.band .sub{margin:3px 0 0;font-size:14px;opacity:.9}
-.wrap{max-width:720px;margin:0 auto;padding:14px max(16px,env(safe-area-inset-right)) calc(56px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
-.progress{height:6px;background:#dce5ef;border-radius:3px;overflow:hidden;margin:6px 0 4px}
-.progress>div{height:100%;background:var(--gold);width:0;transition:width .3s}
-.pcount{font-size:13px;color:var(--muted);margin-bottom:6px}
-.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 18px 16px;margin:14px 0}
-.card.err{border-color:var(--err);box-shadow:0 0 0 3px rgba(184,53,42,.12)}
-.q{font-weight:600;margin:0 0 4px;font-size:18px;line-height:1.35}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.5 "Rubik",-apple-system,"Segoe UI",Roboto,Arial,sans-serif;-webkit-text-size-adjust:100%;counter-reset:q}
+.top{max-width:640px;margin:0 auto;padding:calc(28px + env(safe-area-inset-top)) max(20px,env(safe-area-inset-right)) 6px max(20px,env(safe-area-inset-left))}
+.kicker{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);font-weight:600;margin:0 0 8px}
+h1{font-size:30px;line-height:1.15;margin:0;font-weight:700;letter-spacing:-.02em}
+.wrap{max-width:640px;margin:0 auto;padding:8px max(20px,env(safe-area-inset-right)) calc(64px + env(safe-area-inset-bottom)) max(20px,env(safe-area-inset-left))}
+.progress{position:fixed;left:0;top:0;right:0;height:4px;background:transparent;z-index:5}
+.progress>div{height:100%;background:var(--acc);width:0;transition:width .3s}
+.pcount{font-size:13px;color:var(--muted);margin:10px 0 0}
+.card{padding:26px 0 22px;border-top:1px solid var(--line);margin:0;scroll-margin-top:14px}
+.card.intro{border-top:0;padding-top:14px}
+.card:not(.intro):not(.thanks):not(.hidden){counter-increment:q}
+.card:not(.intro):not(.thanks) .q::before{content:counter(q);display:inline-block;min-width:28px;height:28px;line-height:28px;text-align:center;border-radius:50%;background:var(--ink);color:#fff;font-size:14px;font-weight:600;margin-right:10px;vertical-align:2px}
+.card.err .q{color:var(--err)}
+.q{font-weight:600;margin:0 0 6px;font-size:20px;line-height:1.3;letter-spacing:-.01em}
 .hint{color:var(--muted);font-size:14px;margin:0 0 10px}
 .errmsg{display:none;color:var(--err);font-size:14px;margin:0 0 8px;font-weight:500}
 .card.err .errmsg{display:block}
-.opts{display:flex;flex-direction:column;gap:7px}
-.opt{display:flex;align-items:flex-start;gap:12px;padding:12px 13px;border:1.5px solid var(--border);border-radius:10px;cursor:pointer;background:#fff;user-select:none;transition:border-color .12s,background .12s}
-.opt:hover{border-color:#9fb6cc}
-.opt input{margin:3px 0 0;width:20px;height:20px;flex:0 0 20px;accent-color:var(--sky)}
-.opt.sel{border-color:var(--sky);background:var(--sel)}
-.opt.dis{opacity:.4;cursor:not-allowed}
+.opts{display:flex;flex-direction:column;gap:0;margin-top:10px;border:1px solid var(--line);border-radius:6px;background:#fffdf9;overflow:hidden}
+.opt{display:flex;align-items:center;gap:12px;padding:13px 14px;border-top:1px solid var(--line);cursor:pointer;user-select:none;transition:background .12s}
+.opt:first-child{border-top:0}
+.opt:hover{background:#f3efe6}
+.opt input{margin:0;width:18px;height:18px;flex:0 0 18px;accent-color:var(--acc)}
+.opt.sel{background:var(--sel);font-weight:500;box-shadow:inset 3px 0 0 var(--acc)}
 .opt .lbl{flex:1}
-.opt:focus-within{outline:3px solid rgba(47,116,181,.35);outline-offset:1px}
-.party{color:var(--muted);font-size:14px}
-input[type=text],select{width:100%;font:inherit;padding:11px 12px;border:1.5px solid var(--border);border-radius:10px;background:#fff;margin-top:6px;color:var(--text)}
-select{appearance:auto}
-.matrix{display:flex;flex-direction:column;gap:14px}
-.mrow{border-top:1px solid #e6edf4;padding-top:10px}
-.mrow .rl{font-weight:600;margin-bottom:6px}
-.mrow .opts{gap:4px}
-.mrow .opt{padding:8px 11px;font-size:15px;align-items:center}
-.mrow .opt input{margin:0;width:16px;height:16px;flex-basis:16px}
-.nav{display:flex;gap:12px;justify-content:space-between;margin-top:20px}
-.qnav{display:flex;justify-content:flex-end;margin-top:14px}
-.btn-nq{background:#e9f1f9;color:var(--sky-d);padding:10px 18px;font-size:15px;border-radius:999px}
-.btn-nq:hover{background:#d9e8f6}
-.card{scroll-margin-top:12px}
-.submit{display:flex;flex-direction:column;align-items:center;gap:8px;margin:18px 0 8px}
-.submit .btn-next{margin:0;width:100%;max-width:360px}
-button{font:inherit;font-weight:600;padding:14px 28px;border-radius:12px;border:0;cursor:pointer;font-size:17px}
-button:focus-visible{outline:3px solid rgba(47,116,181,.4);outline-offset:2px}
-.btn-next{background:var(--sky);color:#fff;margin-left:auto}
-.btn-next:hover{background:var(--sky-d)}
-.btn-prev{background:#e3eaf2;color:var(--text)}
-.intro p{margin:0 0 12px}
-.intro .lead{font-size:19px;font-weight:600;line-height:1.35}
-.thanks{text-align:center;padding:44px 12px}
-.thanks h2{color:var(--ok);font-size:28px;margin:0 0 8px}
+.opt:focus-within{outline:2px solid var(--acc);outline-offset:-2px}
+select{width:100%;font:inherit;padding:13px 12px;border:1px solid var(--line);border-radius:6px;background:#fffdf9;margin-top:10px;color:var(--ink);appearance:auto}
+.matrix{display:flex;flex-direction:column;gap:18px;margin-top:6px}
+.mrow .rl{font-weight:600;margin-bottom:0}
+.mrow .opts{margin-top:8px}
+.mrow .opt{padding:9px 12px;font-size:15px}
+.mrow .opt input{width:16px;height:16px;flex-basis:16px}
+.qnav{display:flex;justify-content:flex-start;margin-top:14px}
+button{font:inherit;font-weight:600;border:0;cursor:pointer}
+button:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.btn-nq{background:transparent;color:var(--acc-d);padding:6px 0;font-size:15px;text-decoration:underline;text-underline-offset:3px}
+.submit{display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:26px 0 8px;border-top:1px solid var(--line)}
+.btn-next{background:var(--ink);color:#fff;padding:15px 34px;border-radius:6px;font-size:17px;width:100%}
+.btn-next:hover{background:#000}
+.intro p{margin:0 0 10px;color:var(--muted)}
+.intro .lead{font-size:18px;color:var(--ink);line-height:1.4}
+.thanks{text-align:left;padding:40px 0;border-top:0}
+.thanks h2{color:var(--acc);font-size:30px;margin:0 0 8px;letter-spacing:-.02em}
 .hidden{display:none !important}
-.small{font-size:14px;color:var(--muted)}
-a{color:var(--sky)}
-.note{background:#fff7df;border:1px solid #f0dc9c;border-radius:10px;padding:10px 12px;font-size:14px;margin:8px 0 0}
+.small{font-size:14px;color:var(--muted);margin:0}
+@media (max-width:360px){body{font-size:16px}h1{font-size:26px}.q{font-size:18px}}
 @media (prefers-reduced-motion:reduce){.progress>div,.opt{transition:none}}
-@media (max-width:360px){body{font-size:16px}h1{font-size:20px}.q{font-size:17px}button{padding:13px 20px;font-size:16px}.card{padding:16px 14px 12px}}
-@media (min-width:900px){body{font-size:18px}.q{font-size:19px}}
-@media (hover:none){.opt:hover{border-color:var(--border)}.opt:active{background:var(--sel)}}
-@media print{.band,.nav,.progress{display:none}}
 </style>
 </head>
 <body>
-<div class="band"><div class="in">
-  <div class="stars"><span></span><span></span><span></span></div>
-  <div><h1>Предвыборный опрос в Гагаузии</h1><p class="sub">Второй тур выборов башкана</p></div>
-</div></div>
-<div class="wrap">
-<header>
-  <div class="progress"><div id="pbar"></div></div>
+<div class="progress"><div id="pbar"></div></div>
+<div class="top">
+  <p class="kicker">Опрос · второй тур</p>
+  <h1>Башкан Гагаузии: кого поддержите вы?</h1>
   <div class="pcount" id="pcount"></div>
-</header>
+</div>
+<div class="wrap">
 <main id="main"></main>
 </div>
 
@@ -165,22 +149,22 @@ function visibleQs(){ return QS.filter(q=>!q.show||q.show(S.a)); }
 function setProgress(){
   const vis=visibleQs(), n=vis.filter(answered).length;
   document.getElementById("pbar").style.width=(S.page>1?100:(vis.length?n/vis.length*100:0))+"%";
-  document.getElementById("pcount").textContent=S.page>1?"":`Отвечено ${n} из ${vis.length}`;
+  document.getElementById("pcount").textContent=S.page>1?"":`${n} / ${vis.length}`;
 }
 function render(){
   if(S.page>1) return renderThanks();
   main.innerHTML=`<div class="card intro">
-  <p class="lead">Во втором туре выборов башкана остались два кандидата. Кого поддержите вы?</p>
-  <p>Опрос полностью анонимен и занимает 2 минуты. Мы не собираем имена, телефоны или другие личные данные. Все вопросы на одной странице — просто листайте вниз.</p></div>`;
+  <p class="lead">Несколько коротких вопросов о втором туре. Это займёт около двух минут.</p>
+  <p>Ответы анонимны: имя, телефон и адрес не спрашиваем. Листайте вниз и отмечайте ответы.</p></div>`;
   QS.forEach(q=>main.appendChild(renderQ(q)));
   const sub=document.createElement("div"); sub.className="submit"; sub.id="submit";
-  sub.innerHTML=`<button class="btn-next" id="finish">Отправить ответы</button><p class="small">Ответы сохраняются и во время заполнения.</p>`;
+  sub.innerHTML=`<button class="btn-next" id="finish">Готово, отправить</button><p class="small">Отмеченные ответы уже сохранены.</p>`;
   main.appendChild(sub);
   document.getElementById("finish").onclick=finish;
   refreshVisibility();
 }
 function renderThanks(){
-  main.innerHTML=`<div class="card thanks"><h2>Спасибо!</h2><p>Ваши ответы сохранены.</p><p class="small">Отправьте ссылку друзьям и соседям: чем больше ответов, тем точнее картина.</p></div>`;
+  main.innerHTML=`<div class="card thanks"><h2>Ответы приняты</h2><p>Спасибо, что нашли время.</p><p class="small">Поделитесь ссылкой с родными и соседями — так результат будет точнее.</p></div>`;
   setProgress(); window.scrollTo(0,0);
 }
 function renderQ(q){
@@ -194,7 +178,7 @@ function renderQ(q){
     h+=`<div class="matrix">`+q.rows.map((r,ri)=>`<div class="mrow"><div class="rl">${esc(r)}</div><div class="opts">`+
       q.cols.map(c=>{const name=q.id+"_"+ri;const sel=(S.a[q.id]||{})[r]===c;return `<label class="opt ${sel?"sel":""}"><input type="radio" name="${name}" value="${esc(c)}" ${sel?"checked":""}><span class="lbl">${esc(c)}</span></label>`;}).join("")+`</div></div>`).join("")+`</div>`;
   }else h+=`<div class="opts"></div>`;
-  h+=`<div class="qnav"><button type="button" class="btn-nq">Следующий вопрос ↓</button></div>`;
+  h+=`<div class="qnav"><button type="button" class="btn-nq">Дальше</button></div>`;
   card.innerHTML=h;
   card.querySelector(".btn-nq").onclick=()=>scrollNext(q);
   if(q.type==="select"){ card.querySelector("select").onchange=e=>{S.a[q.id]=e.target.value||undefined; changed(card);}; }
@@ -229,7 +213,7 @@ function refreshVisibility(){
     if(!vis&&S.a[q.id]!==undefined){ delete S.a[q.id]; save(); card.querySelectorAll("input").forEach(i=>{i.checked=false;i.closest(".opt").classList.remove("sel");}); }
   });
   const vis=visibleQs(); const lastId=vis.length?vis[vis.length-1].id:null;
-  QS.forEach(q=>{ const b=document.querySelector("#card_"+q.id+" .btn-nq"); if(b) b.textContent=q.id===lastId?"К отправке ↓":"Следующий вопрос ↓"; });
+  QS.forEach(q=>{ const b=document.querySelector("#card_"+q.id+" .btn-nq"); if(b) b.textContent=q.id===lastId?"К завершению":"Дальше"; });
   setProgress();
 }
 function answered(q){ const v=S.a[q.id]; if(q.type==="matrix") return !!v&&q.rows.every(r=>v[r]); return !!v; }
